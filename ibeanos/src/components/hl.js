@@ -1,5 +1,8 @@
 import React, {Component} from "react"
 import "../App.css";
+import PageRenderer from "./pdf/page-renderer"
+import HLP1 from "../papers/Physics_paper_1_HL.pdf"
+import AllPages from "./pdf/page-renderer";
 
 export default class Hl extends Component {
     constructor() {
@@ -11,7 +14,7 @@ export default class Hl extends Component {
         return(
             <div className="App">
                 <header className="App-header">
-                    <h1>Here is the HL paper</h1>
+                    <PageRenderer pdf={HLP1}/>
                 </header>
             </div>
         )
