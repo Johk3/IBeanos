@@ -1,11 +1,10 @@
 import React, {Component} from "react"
 import "../App.css";
-import SLP1 from "../papers/Physics_paper_1_SL.pdf"
+import SLP1 from "../papers/Biology_paper_1__TZ1_SL.pdf"
 import AllPages from "./pdf/page-renderer";
 import Timer from "./timer"
 
-
-export default class Sl extends Component {
+export default class BiologySL extends Component {
     constructor() {
         super();
     }

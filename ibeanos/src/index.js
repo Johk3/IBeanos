@@ -6,14 +6,33 @@ import reportWebVitals from './reportWebVitals';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Hl from "./components/hl"
 import Sl from "./components/sl"
+import BiologyHL from "./components/biologyhl"
+import BiologySL from "./components/biologysl"
+import ChemistryHL from "./components/chemistryhl"
+import ChemistrySL from "./components/chemistrysl"
+import MathAAHL from "./components/mathaahl"
+import MathAASL from "./components/mathaasl"
+import MathAAHLM from "./components/mathaahlm"
+import MathAASLM from "./components/mathaaslm"
 
 const routing = (
   <Router>
     <div>
       <Routes>
         <Route path="/" element={<App/>}/>
-        <Route path="/hl" element={<Hl/>}/>
-        <Route path="/sl" element={<Sl/>}/>
+        <Route path="/physicshl" element={<Hl/>}/>
+        <Route path="/physicssl" element={<Sl/>}/>
+
+        <Route path="/mathaahl" element={<MathAAHL/>}/>
+        <Route path="/mathaahl/m*" element={<MathAAHLM/>}/>
+        <Route path="/mathaasl" element={<MathAASL/>}/>
+        <Route path="/mathaasl/m*" element={<MathAASLM/>}/>
+
+        <Route path="/biologyhl" element={<BiologyHL/>}/>
+        <Route path="/biologysl" element={<BiologySL/>}/>
+
+        <Route path="/chemistryhl" element={<ChemistryHL/>}/>
+        <Route path="/chemistrysl" element={<ChemistrySL/>}/>
       </Routes>
     </div>
   </Router>
